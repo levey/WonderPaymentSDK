@@ -10,8 +10,7 @@ Pod::Spec.new do |s|
   s.author                  = "Wonder Developer"
   s.source                  = { :http => "https://github.com/Levey/WonderPaymentSDK.git" }
   s.ios.vendored_frameworks = "iOS/PaymentSDK.framework"
-  s.ios.vendored_libraries = "iOS/uppay_kit/libPaymentControlMini.a"
-  s.public_header_files = "iOS/uppay_kit/UPPaymentControl.h"
+  s.resource = ["iOS/PaymentSDK.bundle"]
   s.frameworks = 'UIKit'
   s.frameworks  = 'PassKit'
   s.dependency 'AlipaySDK-iOS'
